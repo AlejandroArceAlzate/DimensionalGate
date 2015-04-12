@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>DimensionalGate - Comparte tus ideas de forma Interactiva </title>
@@ -7,7 +7,7 @@
 	<meta name="description" content="Recorridos virtuales, Desarrollo de videojuegos y de todo tipo de arte virtual, lleva tus ideas a otro nivel, que no te conozcan, que interactúen contigo"/>
 	<link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <script>
+   <script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -28,9 +28,59 @@
 			Somos una agencia que trabaja y ama el arte interactivo, hacemos recorridos virtuales, render arquitectónico, desarrollo de videojuegos, desarrollo de páginas, etc. En pocas palabras, si tienes una idea de negocio y necesitas presentarla de una forma que las personas la entiendan y la recuerden, nosotros somos las personas indicadas para ayudarte. 
 		</p>
 		<p>
-			Pronto estaremos en línea para ofrecerte lo mejor sobre contenidos virtuales, así que ponte atento porque cosas maravillosas están a punto de suceder, nos veremos pronto
+			A continuación, te mostramos un poco de nuestro trabajo, para que puedas observar el realismo y la dedicación que le ponemos a nuestros trabajos y como estos te pueden ayudar a ti a mostrar tus ideas de una forma mas interactiva
 		</p>
-		<img heigth="300" width="340" src="img/Pagina-en-Construcción.jpg">
 	</article>
+	<article class="slider_container">
+		<ul class="rslides" id="slider4">
+			<li>
+				<img width="910" height="540"src="img/slider de muestrario/Modelado Cocina-lineas.jpg" alt="Renderizado de una cocina" title="Renderizado de una cocina">
+				<p class="caption">Renderizado de una Cocina</p>
+			</li>
+			<li>
+				<img width="910" height="540" src="img/slider de muestrario/Modelado Cocina.jpg" alt="Renderizado de una cocina con textura" title="Renderizado de una cocina con textura">
+				<p class="caption">Le agregamos Textura y...</p>
+			</li>
+			<li>
+				<img width="910" height="540" src="img/slider de muestrario/Comedor-lineas.jpg" alt="Renderizado de un comedor" title="Renderizado de un comedor">
+				<p class="caption">Renderizado de un Comedor</p>
+			</li>
+			<li>
+				<img width="910" height="540" src="img/slider de muestrario/Comedor.jpg" alt="Renderizado de un comedor con textura" title="Renderizado de un comedor con textura">
+				<p class="caption">Le agregamos Textura y...</p>
+			</li>
+			<li>
+				<img width="910" height="540" src="img/slider de muestrario/Cuarto-tinta.jpg" alt="Renderizado de un cuarto" title="Renderizado de un cuarto">
+				<p class="caption">Renderizado de un cuarto</p>
+			</li>
+			<li>
+				<img width="910" height="540" src="img/slider de muestrario/Cuarto.jpg" alt="Renderizado de un cuarto con textura" title="Renderizado de un cuarto con textura">
+				<p class="caption">Le agregamos Textura y...</p>
+			</li>
+		</ul>
+	</article>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/ResponsiveSlides.js-master/responsiveslides.min.js"></script>
+	<script type="text/javascript">
+		 $(function () {
+
+	      // Slideshow 4
+	      $("#slider4").responsiveSlides({
+	        auto: true,
+	        pager: false,
+	        nav: true,
+	        speed: 900,
+	        namespace: "callbacks",
+	        before: function () {
+	          $('.events').append("<li>before event fired.</li>");
+	        },
+	        after: function () {
+	          $('.events').append("<li>after event fired.</li>");
+	        }
+	      });
+
+	    });
+	</script>
 </body>
 </html>
